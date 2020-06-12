@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    /* BRUH */
+}
+
+card {
+    display: inline-block;
+    min-width: 850px;
+    height: calc(100vh - 100px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px -2px #333;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+}
