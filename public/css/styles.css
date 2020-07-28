@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sofia-pro, sans-serif;
+    font-family: bebas-neue-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
@@ -14,6 +14,93 @@ body {
     padding: 0;
 }
 
+h1, h2, h3 {
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.75em;
+    transition: .6s;
+}
+
+h1:hover {
+    font-size: 3.25em;
+}
+
+h2 {
+    font-size: 1.75em;
+    transition: .6s;
+}
+h2:hover {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-family: bebas-neue-pro, sans-serif;
+    font-size: 1.5em;
+    transition: .6s;
+}
+
+h3:hover {
+    font-size: 1.75em;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
 p {
     padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    width: 25vw;
+    height: 100vh;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline;
+    width: 75vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.left .centered {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+}
+
+.right .centered {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
+
+.left .centered h1, .left .centered h2 {
+    text-align: right;
+}
+
+.right .centered h2, .right .centered h3 {
+    background-color: #002854;
+    text-align: left;
+    display: inline;
+    padding: 0 5px;
 }
