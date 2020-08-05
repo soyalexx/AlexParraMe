@@ -1,0 +1,44 @@
+h1, h2, h3 {
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+h2 a {
+    text-decoration: none;
+    font-family: bebas-neue-pro, sans-serif;
+}
+
+.container {
+    background-color: #002854;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+.right {
+    position: absolute;
+    bottom: 50px;
+    z-index: 100;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+#images {
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    right: 0%;
+    transform: none;
+    background-size: cover;
+    background-position: center;
+}

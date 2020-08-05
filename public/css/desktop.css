@@ -1,0 +1,96 @@
+body {
+    background: #002854;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.75em;
+    transition: .6s;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h2 a {
+    transition: .6s;
+    font-family: bebas-neue-pro, sans-serif;
+}
+h2 a:hover {
+    font-size: 2em;
+}
+
+h3 {
+    font-family: bebas-neue-pro, sans-serif;
+    font-size: 1.5em;
+    transition: .6s;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+p {
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    width: 25vw;
+    height: 100vh;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline;
+    width: 75vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+    background-size: cover;
+    z-index: 10;
+}
+#images{
+    z-index: 0;
+}
+
+.left .centered {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+}
+
+.right .centered {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
+
+.left .centered h1, .left .centered h2 {
+    text-align: right;
+}
+
+.right .centered h2, .right .centered h3 {
+    background-color: #002854;
+    text-align: left;
+    display: inline;
+    padding: 0 5px;
+}

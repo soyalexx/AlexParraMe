@@ -13,4 +13,26 @@
             <h3>University of California, Berkeley</h3>
         </div>
     </div>
+    <div id="images" class="right">
+    </div>
+    <script>
+        //Array of images which you want to show: Use path you want.
+        var images=['/assets/Beach.JPG',
+                '/assets/ShoesPicture.jpg',
+                '/assets/girlwithcanon.jpg',
+                '/assets/columns.jpg',
+                '/assets/purpleselfportrait.jpg'];
+        var nextimage=0;
+        doSlideshow();
+
+        async function doSlideshow(){
+            if(nextimage>=images.length){nextimage=0;}
+            $('#images').fadeOut(500, async function(){
+                await $('#images').css('background-image','url("'+images[nextimage++]+'")');
+                $('#images').fadeIn(500,function(){
+                    setTimeout(doSlideshow,3000);
+                });
+            });
+        }
+    </script>
 </div>
