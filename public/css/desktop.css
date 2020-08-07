@@ -3,6 +3,8 @@ body {
     padding: 0;
 }
 
+.left br {display: none;}
+
 h1, h2, h3 {
     font-family: prohibition, sans-serif;
     font-weight: 400;
