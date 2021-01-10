@@ -6,7 +6,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static(__dirname + '/public'));
 
 app.get("/", (req, res) => {
-    res.render("home");
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 const PORT = process.env.PORT || 8080;

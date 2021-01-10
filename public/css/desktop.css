@@ -1,19 +1,14 @@
 body {
-    background: #002854;
+    background: #ecfffc;
     padding: 0;
 }
 
-.left br {display: none;}
-
-h1, h2, h3 {
-    font-family: prohibition, sans-serif;
-    font-weight: 400;
-    text-align: left;
-}
-
 h1 {
-    font-size: 2.75em;
-    transition: .6s;
+    font-family: arbotek, serif;
+    font-weight: 900;
+    font-size: 5em;
+    text-align: left;
+    color: black;
 }
 
 h2 {
@@ -23,6 +18,7 @@ h2 {
 h2 a {
     transition: .6s;
     font-family: bebas-neue-pro, sans-serif;
+    color: black;
 }
 h2 a:hover {
     font-size: 2em;
@@ -46,15 +42,7 @@ p {
 .container {
     width: 100vw;
     height: 100vh;
-}
-
-.left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline;
-    width: 25vw;
-    height: 100vh;
+    color: black;
 }
 
 .right {
@@ -72,13 +60,6 @@ p {
     z-index: 0;
 }
 
-.left .centered {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translate(0, -50%);
-}
-
 .right .centered {
     position: absolute;
     top: 50%;
@@ -86,12 +67,8 @@ p {
     transform: translate(0, -50%);
 }
 
-.left .centered h1, .left .centered h2 {
-    text-align: right;
-}
-
 .right .centered h2, .right .centered h3 {
-    background-color: #002854;
+    background-color: #ecfffc;
     text-align: left;
     display: inline;
     padding: 0 5px;

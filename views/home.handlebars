@@ -1,38 +1,24 @@
 <div class="container">
-    <div class="left">
-        <div class="centered">
-            <h1>Alex Parra</h1>
-            <h2><a href="https://www.linkedin.com/in/alex-parra">LinkedIn</a></h2><br/>
-            <h2><a href="https://github.com/soyalexx">GitHub</a></h2><br/>
-            <h2><a href="https://500px.com/alexanderparra">500px</a></h2><br/>
-        </div>
-    </div>
-    <div class="right">
-        <div class="centered">
-            <h2>Computer Science</h2><br/>
-            <h3>University of California, Berkeley</h3>
-        </div>
-    </div>
-    <div id="images" class="right">
-    </div>
-    <script>
-        //Array of images which you want to show: Use path you want.
-        var images=['/assets/compressed/Beach.jpg',
-                '/assets/compressed/ShoesPicture.jpg',
-                '/assets/compressed/girlwithcanon.jpg',
-                '/assets/compressed/columns.jpg',
-                '/assets/compressed/purpleselfportrait.jpg'];
-        var nextimage=0;
-        doSlideshow();
-
-        async function doSlideshow(){
-            if(nextimage>=images.length){nextimage=0;}
-            $('#images').fadeOut(500, async function(){
-                await $('#images').css('background-image','url("'+images[nextimage++]+'")');
-                $('#images').fadeIn(500,function(){
-                    setTimeout(doSlideshow,3000);
-                });
-            });
+    <style>
+        left {
+            position: absolute;
+            width: 50vw;
+            left: 50%;
+            top: 50%;
+            text-align: right;
+            transform: translate(-50%, -50%);
         }
-    </script>
+    </style>
+    <div class="left">
+            <h1>Alex Parra</h1>
+            <h2>Computer Science and Chicano Studies</h2><br/>
+            <h3>University of California, Berkeley</h3>
+    </div>
+<!--    <div class="right">-->
+<!--        <div class="centered">-->
+<!--            <h2><a href="https://www.linkedin.com/in/alex-parra">LinkedIn</a></h2><br/>-->
+<!--            <h2><a href="https://github.com/soyalexx">GitHub</a></h2><br/>-->
+<!--            <h2><a href="https://500px.com/alexanderparra">500px</a></h2><br/>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
